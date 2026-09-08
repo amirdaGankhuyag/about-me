@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="mn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="about-me" content="this webpage is about Amirda." />
+    <title>About Me</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+
+    <!-- Playfair Display font embed code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .container {
+        margin: 31px 0;
+      }
+
+      .heading {
+        font-family: "Playfair Display", serif;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 33px;
+        color: #5e5e5c;
+        margin: 0 0 15px 0;
+      }
+
+      .heading-has-more-margin {
+        margin: 0 0 16px 0;
+      }
+
+      .heading-has-more-line-height {
+        line-height: 33.6px;
+      }
+
+      .brown-heading {
+        color: #a03f30;
+      }
+
+      .heading:hover {
+        color: #868683;
+        cursor: pointer;
+      }
+
+      .brown-heading:hover {
+        color: #cf6656;
+        cursor: wait;
+      }
+
+      .paragraph {
+        font-family: "Inter", sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 30.6px;
+        color: #454742;
+        margin: 0;
+      }
+
+      .paragraph:hover {
+        color: #0c0c0b;
+        font-weight: 400;
+        cursor: help;
+      }
+
+      .paragraph-quote {
+        font-style: italic;
+      }
+
+      .paragraph-quote:hover {
+        font-style: normal;
+      }
+
+      .paragraph-list {
+        padding: 0 0 0 15px;
+      }
+
+      .paragraph-list:hover {
+        list-style: square;
+      }
+
+      .triple-image {
+        border: 1px solid #c6c7c0;
+        border-radius: 4px;
+        width: 216px;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .swiss-image {
+        transition: transform 0.5s ease;
+        cursor: pointer;
+      }
+
+      .swiss-image:hover {
+        transform: scale(1.05);
+      }
+
+      .study {
+        position: relative;
+        flex: 1;
+        border: 8px solid #dfdacd;
+        border-radius: 8px;
+        height: 292px;
+        width: 324px;
+      }
+
+      .study-in-div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+
+      .study-in-div-in-p {
+        font-family: "Playfair Display", serif;
+        color: #fff;
+        font-size: 16px;
+        line-height: 24px;
+      }
+    </style>
+  </head>
+
+  <body style="background-color: #fef9ec">
+    <div style="margin: 128px auto 192px auto; width: 680px">
+      <h1
+        style="
+          font-family: &quot;Playfair Display&quot;, serif;
+          font-weight: 700;
+          font-size: 48px;
+          color: #1d1c14;
+          line-height: 52.8px;
+          margin: 0 0 31px;
+        "
+      >
+        Amirda G.
+      </h1>
+
+      <img
+        style="border-radius: 12px; border: 2px solid #c6c7c0"
+        width="200px"
+        height="201px"
+        src="./images/me.jpg"
+        alt="Amirda"
+      />
+
+      <p class="paragraph" style="font-weight: 700; margin: 31px 0">
+        Hi, I'm Amirda! I'm a Software Engineer Bootcamp student at Pinecone
+        Academy. I live for lifting weights, and discovering new live music to
+        fuel my creativity.
+      </p>
+
+      <div class="container">
+        <h2 class="heading heading-has-more-line-height">Things I Like</h2>
+        <ul class="paragraph paragraph-list">
+          <li>Grinding code</li>
+          <li>Lifting Weights</li>
+          <li>Curating Playlists</li>
+        </ul>
+      </div>
+
+      <div class="container">
+        <h2 class="heading heading-has-more-line-height">I Want to Learn</h2>
+        <p class="paragraph">I'm currently learning basics of HTML & CSS.</p>
+      </div>
+
+      <div class="container">
+        <h2 class="heading brown-heading">Favorite Quote</h2>
+        <blockquote class="paragraph paragraph-quote">
+          "God helps those who help themselves."
+        </blockquote>
+      </div>
+
+      <div class="container">
+        <h2 class="heading">Fun Fact</h2>
+        <p class="paragraph">
+          I have a collection of over 30 unique physical SIM in my chest of
+          drawers.
+        </p>
+      </div>
+
+      <div class="container">
+        <h2 class="heading heading-has-more-margin">Places I want to visit</h2>
+
+        <div style="display: flex">
+          <a href="./swiss.html" target="_blank">
+            <img
+              class="triple-image swiss-image"
+              style="margin: 0 auto 0 0"
+              src="./images/swiss-alps.jpg"
+              title="Алив ДАРаад орхи!!!"
+              alt="swiss-alps"
+            />
+          </a>
+          <img
+            class="triple-image"
+            style="margin: 0 auto 0 auto"
+            src="./images/kyoto-japan.jpg"
+            alt="kyoto-japan"
+          />
+          <img
+            class="triple-image"
+            style="margin: 0 0 0 auto"
+            src="./images/italy.jpg"
+            alt="italy"
+          />
+        </div>
+      </div>
+
+      <div style="margin: 31px 0 0 0">
+        <h2 class="heading heading-has-more-margin">Favorite Study Spots</h2>
+        <div style="display: flex; gap: 10px">
+          <div class="study">
+            <img width="100%" height="100%" src="./images/it.jpg" alt="back" />
+            <div class="study-in-div">
+              <p class="study-in-div-in-p">Information Technology</p>
+            </div>
+          </div>
+
+          <div class="study">
+            <img
+              width="100%"
+              height="100%"
+              src="./images/bball.jpg"
+              alt="back"
+            />
+            <div class="study-in-div">
+              <p class="study-in-div-in-p">Basketball</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
